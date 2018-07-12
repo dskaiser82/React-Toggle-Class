@@ -1,6 +1,6 @@
-#Description
+## Description
 An Easy example of toggle class via React
 
-#Install
+## Install
 Use npm install
 npm start
