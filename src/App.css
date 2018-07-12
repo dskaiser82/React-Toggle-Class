@@ -1,15 +1,33 @@
-.box{
- position: absolute;
- left: 50%;
- top: 50%;
- transform: translate(-50%, -50%);
- width: 350px;
- height: 350px;
-}
 
-a{
+.box-holder{
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.box{
+ width: 350px;
+ height: 350px;
+ opacity: 0;
+ text-align: center;
+ padding-top: 35%;
+ font-size: 3.5em;
+ font-family: 'Lobster', cursive;
+ color: white;
+ transition: opacity 1s ease-in-out;
+-moz-transition: opacity 1s ease-in-out;
+-webkit-transition: opacity 1s ease-in-out;
+}
+
+a{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.fade-in{
+    opacity: 1 !important;
 }

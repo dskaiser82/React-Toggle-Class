@@ -8,7 +8,6 @@ class App extends Component {
   }
 
   toggleClass = (e) => {
-    console.log("Woot")
     this.setState({isActive: !this.state.isActive})
   }
 
@@ -16,7 +15,9 @@ class App extends Component {
     console.log(this.state)
     return (
       <div className="App">
-        <div className="box teal lighten-2">
+        <div className="box-holder">
+          <div className={(this.state.isActive) ? "box teal lighten-2 fade-in" : "box"}>Wow, Magic!
+          </div>
           <a onClick={this.toggleClass} className="waves-effect waves-light btn">Click Me!</a>
         </div>
       </div>
